@@ -17,7 +17,7 @@ Fiturnya:
 * Edit tugas
 <img width="852" height="630" alt="image" src="https://github.com/user-attachments/assets/15a67fe6-0cd7-4680-b407-f04965bc9627" />
 
-*Tandai tugas kalau sudah selesai
+* Tandai tugas kalau sudah selesai
 <img width="857" height="641" alt="image" src="https://github.com/user-attachments/assets/6a6e08f7-bae1-4051-98b4-3844865ec1e3" />
 
 ## How-To-Run
