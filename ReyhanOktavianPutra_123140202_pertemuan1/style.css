@@ -1,0 +1,235 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 30px;
+}
+
+/*-----------------------------------------------------------------Form Styling */
+.task-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #00a2ff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.submit-btn {
+    grid-column: 1 / -1;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #31c5d8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #217888;
+}
+
+.submit-btn.editing {
+    background-color: #a02cff;
+    color: #ffffff;
+}
+
+.submit-btn.editing:hover {
+    background-color: #7506a8;
+}
+
+/*-----------------------------------------------------------------Filter Section */
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filters input, .filters select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/*-----------------------------------------------------------------Task List */
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.task-list-header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#incomplete-count {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #e9ecef;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: #495057;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    gap: 15px;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item.completed .task-details {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task-item .toggle-complete {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.task-details {
+    flex-grow: 1;
+}
+
+.task-details strong {
+    font-size: 16px;
+    color: #000;
+    display: block;
+}
+
+.task-details small {
+    font-size: 14px;
+    color: #555;
+}
+
+.task-actions {
+    flex-shrink: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.task-btn {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.task-btn:hover {
+    opacity: 0.8;
+}
+
+.edit-btn {
+    background-color: #cc4cff;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/*-----------------------------------------------------------------Responsif */
+@media (max-width: 600px) {
+    .task-form, .filters {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    header {
+        padding: 20px;
+    }
+    
+    .task-item {
+        flex-wrap: wrap;
+    }
+    
+    .task-actions {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: flex-end;
+    }
+}
