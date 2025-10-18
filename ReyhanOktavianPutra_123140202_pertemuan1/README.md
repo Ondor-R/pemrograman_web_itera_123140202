@@ -23,7 +23,7 @@ Fiturnya:
 ## How-To-Run
 Untuk menjalankannya tinggal buka file index.htmlnya
 
-##Penjelasan penggunaan LocalStorage & validasi form
+## Penjelasan penggunaan LocalStorage & validasi form
 Di dalam kode script.js terdapat:
 <img width="456" height="64" alt="image" src="https://github.com/user-attachments/assets/8ad514b5-591e-44d9-af08-ceabdf779316" />
 Fungsi saveTasks memuat sebuah baris kode untuk menyimpan/update data. 'tasks' adalah label nama penyimpanannya. JSON.stringify() itu fungsi mengubah array/objek js jadi string JSON karna localStorage hnya bisa menyimpan data dalam format string. tasks yang didalamnya itu array js yg berisi tugas2nya.
