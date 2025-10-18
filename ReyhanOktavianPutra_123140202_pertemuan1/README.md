@@ -1,4 +1,6 @@
-## Dokumentasi
+<h2 align="center">Dokumentasi</h2>
+
+## Penjelasan singkat tentang fungsi aplikasi dan daftar fitur-fiturnya
 Aplikasi ini digunakan untuk manajemen tugas-tugas mahasiswa.
 Fiturnya:
 * Tambah tugas
