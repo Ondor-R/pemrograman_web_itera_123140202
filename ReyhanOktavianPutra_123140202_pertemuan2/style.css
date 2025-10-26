@@ -1,0 +1,199 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e7faff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/*---------------------------------Layout Dashboard */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.dashboard-column {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/*---------------------------------Widget Waktu & Cuaca */
+#header-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+#clock-widget {
+    display: flex;
+    flex-direction: column;
+}
+
+#clock-time {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+#clock-date {
+    font-size: 1.1em;
+    color: #bdc3c7;
+}
+
+#weather-widget {
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: right;
+}
+
+/*---------------------------------Tugas & Catatan */
+.item-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.item-form input[type="text"] {
+    flex-grow: 1;
+    border: 2px solid #dfe6e9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.item-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.item-form button:hover {
+    background-color: #2980b9;
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1; 
+}
+
+.dashboard-item {
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    word-break: break-word;
+}
+
+.dashboard-item span {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.item-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.edit-btn {
+    color: #ff66e6;
+}
+
+.delete-btn {
+    color: #ff6250;
+}
+
+.edit-btn:hover {
+    color: #8f0077;
+}
+
+.delete-btn:hover {
+    color: #ad1100;
+}
+
+/*---------------------------------Jadwal Kuliah */
+.schedule-table {
+    width: fit-content; 
+    max-width: 100%;  
+    margin: 15px auto 0 auto; 
+    border-collapse: collapse; 
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #dfe6e9;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.schedule-table thead th {
+    background-color: #f4f7f6;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.schedule-table tbody td {
+    color: #555;
+}
+
+.schedule-table tbody td[rowspan] {
+    vertical-align: top;
+    font-weight: 600;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+
+/*---------------------------------Responsive */
+@media (min-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dashboard-container .span-full {
+        grid-column: 1 / -1;
+    }
+}

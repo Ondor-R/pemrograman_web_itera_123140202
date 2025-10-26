@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Personal Dashboard</h1>
+
+        <div class="dashboard-container">
+
+            <section class="dashboard-column span-full" id="header-info">
+                <div id="clock-widget">
+                    <span id="clock-time">00:00:00</span>
+                    <span id="clock-date">Sabtu, 25 Okt 2025</span>
+                </div>
+                <div id="weather-widget">
+                    <span>Memuat cuaca...</span>
+                </div>
+            </section>
+
+            <section class="dashboard-column">
+                <h2>Daftar Tugas</h2>
+                <form id="task-form" class="item-form">
+                    <input type="text" id="task-input" placeholder="Ex: Pemweb - buat web..." required>
+                    <button type="submit">Tambah</button>
+                </form>
+                <div id="task-list" class="item-list"></div>
+            </section>
+
+            <section class="dashboard-column">
+                <h2>Catatan</h2>
+                <form id="note-form" class="item-form">
+                    <input type="text" id="note-input" placeholder="Ex: Kerjakan dengan..." required>
+                    <button type="submit">Tambah</button>
+                </form>
+                <div id="note-list" class="item-list"></div>
+            </section>
+
+            <section class="dashboard-column span-full">
+                <h2>Jadwal Kuliah</h2>
+                
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Hari</th>
+                            <th>Jam</th>
+                            <th>Mata Kuliah</th>
+                            <th>Ruang</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="1">Senin</td>
+                            <td>07.30-09.10</td>
+                            <td>RA Pengembangan Aplikasi Web</td>
+                            <td>GK2-220</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1">Selasa</td>
+                            <td>08.00-10.00</td>
+                            <td>RB Jaringan Komputer</td>
+                            <td>Lab Iot</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Rabu</td>
+                            <td>07.30-10.10</td>
+                            <td>RA Kapita Selekta</td>
+                            <td>GK2-227</td>
+                        </tr>
+                        <tr>
+                            <td>14.50-17.30</td>
+                            <td>RC Inteligensi Buatan</td>
+                            <td>Gk2-220</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4">Kamis</td>
+                            <td>08.00-09.40</td>
+                            <td>R42IF KWU</td>
+                            <td>GK1-105</td>
+                        </tr>
+                        <tr>
+                            <td>10.00-12.00</td>
+                            <td>RC Praktikum Jaringan Komputer</td>
+                            <td>Lab Iot</td>
+                        </tr>
+                        <tr>
+                            <td>13.00-15.40</td>
+                            <td>RC Metologi Penelitian</td>
+                            <td>GK2-318</td>
+                        </tr>
+                        <tr>
+                            <td>15.45-17.30</td>
+                            <td>RE Sistem Informasi</td>
+                            <td>GK2-311</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Jumat</td>
+                            <td>10.15-12.00</td>
+                            <td>RB Desain Interaksi</td>
+                            <td>GK2-125</td>
+                        </tr>
+                        <tr>
+                            <td>13.00-15.10</td>
+                            <td>RC Manajemen Proyek TI</td>
+                            <td>GK2-408</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div> <script src="script.js"></script>
+    </body>
+</html>
