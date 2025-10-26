@@ -20,13 +20,13 @@ Ini adalah dashboard personal yang dibuat untuk tugas praktikum. Berisikan jadwa
 
 * Classes
   seluruh logika script jsny memakai OOP dengan Class2ny.
-  Ex:
+  Ex:  
   <img width="396" height="165" alt="image" src="https://github.com/user-attachments/assets/6604b0b0-3ef5-4bf1-8f7e-406102cc2f69" />
 
 
  * Arrow Function
    Fungsi2nya semua menggunakan arrow function
-   Ex:
+   Ex:  
    <img width="383" height="137" alt="image" src="https://github.com/user-attachments/assets/fa9df785-cc85-4acf-b741-dd8d9963ac30" />
 
 * Template Literals
