@@ -7,7 +7,6 @@ class LibraryItem(ABC):
         self._title = title
 
     #property2ny
-    #semuan method kosong kalau di class abstrak, tpi di subclass harus diimplementasikan
     @property
     def item_id(self):
         return self._item_id
