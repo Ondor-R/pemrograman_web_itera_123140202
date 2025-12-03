@@ -6,33 +6,33 @@ Ini adalah proyek tugas praktikum pyramid framework membuat aplikasi CRUD sederh
 ## Persiapan Lingkungan Pengembangan
 1. Membuat Virtual Environment
 
-	# Buat folder untuk proyek
+	#Buat folder untuk proyek
 	mkdir pyramid_matkul
 	cd pyramid_matkul
 
-	# Buat virtual environment
+	#Buat virtual environment
 	python -m venv venv
 
-	# Aktifkan virtual environment
-	# Untuk Windows
+	#Aktifkan virtual environment
+	#Untuk Windows
 	venv\Scripts\activate
 
 2. Instalasi Pyramid & Dependensi
 	
-	# Upgrade pip
+	#Upgrade pip
 	pip install --upgrade pip setuptools
 
-	# Install cookiecutter untuk template proyek
+	#Install cookiecutter untuk template proyek
 	pip install cookiecutter
 
-	# Install pyramid dan dependensi dasar
+	#Install pyramid dan dependensi dasar
 	pip install pyramid pyramid_debugtoolbar waitress pyramid_jinja2
 
 ## Membuat Proyek Pyramid dengan Cookiecutter
 1. Menjalankan Cookiecutter
 
-	# Pastikan virtual environment aktif
-	# Jalankan cookiecutter dengan template Pyramid
+	#Pastikan virtual environment aktif
+	#Jalankan cookiecutter dengan template Pyramid
 	cookiecutter gh:Pylons/pyramid-cookiecutter-alchemy
 
 	project_name [Pyramid Scaffold]: pyramid_matkul
@@ -52,8 +52,8 @@ Ini adalah proyek tugas praktikum pyramid framework membuat aplikasi CRUD sederh
 ## Konfigurasi Database PostSQL
 1. Membuat Database PostgreSQL
 
-	# Login ke PostgreSQL sebagai superuser
-	# Ganti username dengan user PostgreSQL Kalian
+	#Login ke PostgreSQL sebagai superuser
+	#Ganti username dengan user PostgreSQL Kalian
 	psql -U postgres
 
 	-- 1. Buat database
@@ -82,8 +82,8 @@ Ini adalah proyek tugas praktikum pyramid framework membuat aplikasi CRUD sederh
 
 3. Update Konfigurasi Pyramid
 
-	# Cari dan ganti baris sqlalchemy.url
+	#Cari dan ganti baris sqlalchemy.url
 	sqlalchemy.url = sqlite:///%(here)s/pyramid_matakuliah.sqlite
 
-	# Menjadi
+	#Menjadi
 	sqlalchemy.url = postgresql://pyramid_user:pyramid_pass@localhost:5432/pyramid_matakuliah
