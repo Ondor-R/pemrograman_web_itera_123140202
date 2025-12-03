@@ -1,0 +1,40 @@
+from pyramid.response import Response
+from pyramid.view import view_config
+
+from sqlalchemy.exc import DBAPIError
+
+from ..models import Matakuliah
+
+
+@view_config(route_name='home', renderer='../templates/mytemplate.jinja2')
+def my_view(request):
+    try:
+        # PERBAIKAN: Ambil semua data matakuliah
+        # Kita menggunakan .all() untuk mengambil list semua record
+        daftar_matakuliah = request.dbsession.query(Matakuliah).all()
+        
+    except DBAPIError:
+        return Response(db_err_msg, content_type='text/plain', status=500)
+    
+    # PERBAIKAN: Kirim variabel 'daftar_matakuliah' ke template
+    # Jangan lupa ubah template Anda untuk melakukan looping pada variabel ini
+    return {
+        'daftar_matakuliah': daftar_matakuliah, 
+        'project': 'pyramid_matkul'
+    }
+
+
+db_err_msg = """\
+Pyramid is having a problem using your SQL database.  The problem
+might be caused by one of the following things:
+
+1.  You may need to initialize your database tables with `alembic`.
+    Check your README.txt for description and try to run it.
+
+2.  Your database server may not be running.  Check that the
+    database server referred to by the "sqlalchemy.url" setting in
+    your "development.ini" file is running.
+
+After you fix the problem, please restart the Pyramid application to
+try it again.
+"""
