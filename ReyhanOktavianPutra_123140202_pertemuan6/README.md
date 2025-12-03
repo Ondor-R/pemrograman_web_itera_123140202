@@ -87,3 +87,20 @@ Ini adalah proyek tugas praktikum pyramid framework membuat aplikasi CRUD sederh
 
 	#Menjadi
 	sqlalchemy.url = postgresql://pyramid_user:pyramid_pass@localhost:5432/pyramid_matakuliah
+
+
+## Lampiran
+<img width="490" height="516" alt="Screenshot 2025-12-03 120511" src="https://github.com/user-attachments/assets/0e01564a-b00b-4f98-ab96-6d2f03f49433" />
+<img width="769" height="38" alt="Screenshot 2025-12-03 121221" src="https://github.com/user-attachments/assets/8f06dc77-a976-4675-a359-19ce449706a1" />
+<img width="775" height="219" alt="Screenshot 2025-12-03 121455" src="https://github.com/user-attachments/assets/5b5d2b1a-4c75-41cd-aae6-912be21099aa" />
+<img width="764" height="184" alt="Screenshot 2025-12-03 121559" src="https://github.com/user-attachments/assets/7e339eec-3e4f-43aa-8689-db7042adc1f6" />
+<img width="682" height="172" alt="Screenshot 2025-12-03 121741" src="https://github.com/user-attachments/assets/d0d76b7f-466d-4727-8484-750e64cb920a" />
+<img width="763" height="185" alt="Screenshot 2025-12-03 122347" src="https://github.com/user-attachments/assets/7b9259cb-2c72-4032-b19a-1a47e6e2069b" />
+<img width="562" height="136" alt="Screenshot 2025-12-03 122440" src="https://github.com/user-attachments/assets/7f4181cf-b77a-44e4-96f1-f5b8e99ba25c" />
+
+
+
+
+
+
+
